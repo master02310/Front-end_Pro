@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+<body>
+<div class="wrapper">
+    <form>
+        <div class="description">
+            <h1>We would like to help you</h1>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="form_info">
+            <input class="input_name input" type="text" id="input_name" name="name" placeholder="Name">
+            <span id="error_name"></span>
+            <input class="input_massage input" type="text" id="input_massage" name="massage" placeholder="Massage">
+            <span id="error_mass"></span>
+        </div>
+        <div class="form_contacting">
+            <h3>How to answer you?</h3>
+            <input class="input input_number" type="tel" placeholder="Phone number" id="input_number" name="number"
+                   title="+380 (__) ___ __ __">
+            <span id="error_number"></span>
+            <input class="input input_email" type="email" placeholder="Email" id="input_email" name="email"
+                   title="must be a valid email address with @ and .">
+            <span id="error_email"></span>
+        </div>
+        <button id="btn" type="submit">Send massage</button>
+    </form>
+</div>
+</body>
+<script src="./main.js"></script>
+</html>
